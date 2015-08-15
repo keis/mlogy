@@ -1,0 +1,42 @@
+{
+  "name": "mlogy",
+  "version": "0.0.0",
+  "description": "interface for creating log records",
+  "main": "lib/logger",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keis/mlogy.git"
+  },
+  "dependencies": {
+    "log-record": "^1.0.0",
+    "object-assign": "^3.0.0",
+    "record-sink": "^2.0.2",
+    "standard-levels": "^1.0.0",
+    "terminus": "^1.0.12"
+  },
+  "devDependencies": {
+    "billom": "^1.0.2",
+    "chai": "^2.3.0",
+    "coffee-script": "^1.9.1",
+    "coveralls": "^2.11.2",
+    "docco": "^0.7.0",
+    "eslint": "^0.20.0",
+    "istanbul": "^0.3.13",
+    "matcha": "^0.6.0",
+    "mocha": "^2.2.4",
+    "readable-stream": "^2.0.2",
+    "sinon": "^1.14.1"
+  },
+  "scripts": {
+    "lint": "eslint lib test && coffeelint test",
+    "test": "mocha --require test/bootstrap.js --compilers coffee:coffee-script/register --recursive test/unit",
+    "coverage": "istanbul cover _mocha --report lcovonly -- --require test/bootstrap.js --compilers coffee:coffee-script/register --recursive test/unit",
+    "billom": "billom package.json \"$npm_package_name\" > package.html",
+    "docs": "docco lib/*.js"
+  },
+  "keywords": [
+    "logging"
+  ],
+  "author": "David Keijser <keijser@gmail.com>",
+  "license": "ISC"
+}
