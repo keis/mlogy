@@ -1,6 +1,6 @@
 {
   "name": "mlogy",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "interface for creating log records",
   "main": "lib/logger",
   "repository": {
