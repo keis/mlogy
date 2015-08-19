@@ -66,6 +66,11 @@ describe "Logger", ->
       record = log.createRecord 20, "message", ["arg1", "arg2"]
       assert.instanceOf record, Record
 
+    it "does not crash with undefined context", ->
+      log = new Logger null, 'foo', 10
+      record = log.createRecord 20, "message", ["arg1", "arg2"]
+      assert.instanceOf record, Record
+
     it "calls all the attached processors", ->
       log = new Logger hier, 'foo', 10
       log.addProcessor (record) ->
