@@ -8,6 +8,7 @@
     "url": "https://github.com/keis/mlogy.git"
   },
   "dependencies": {
+    "is-stream": "^1.0.1",
     "log-record": "^1.0.0",
     "object-assign": "^3.0.0",
     "record-sink": "^2.0.2",
