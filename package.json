@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/keis/mlogy.git"
   },
+  "files": [
+    "lib/logger.js"
+  ],
   "dependencies": {
     "is-stream": "^1.0.1",
     "log-record": "^1.0.1",
